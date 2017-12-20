@@ -1,0 +1,73 @@
+* {
+    font-family: Arial, Helvetica Neue,Helvetica;
+  }
+  
+  body {
+    text-align:center;
+    color:#222;
+  }
+  #emailSimulatorApp {
+    max-width:1400px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  #emails {
+    clear:both;
+    width:100%;
+    margin: auto;
+    border-collapse: collapse;
+    font-size:0.85rem;
+  }
+  
+  #emails > thead > tr > th, #emails > tbody > tr > td{
+    border-bottom:1px solid #ddd;
+    padding:0.7em 0.7em 0.7em 1em;
+    text-align: left;
+    white-space:nowrap;
+    font-weight: bold;
+  }
+  #emails > tbody > tr > td.message {
+    width:100%;
+    position:relative;
+    overflow: hidden;
+    min-width:150px;
+    color:#777;
+    font-weight: normal;
+  }
+  .message-wrapper {
+    position:absolute;
+    top:10px;
+  }
+  .subject {
+    color:#222;
+    font-weight: bold;
+  } 
+  #emails > tbody > tr  {
+    cursor:pointer;
+  }
+  #emails > tbody > tr.email  {
+    cursor:default;
+  }
+  #emails > tbody > tr.email td {
+    font-weight: normal;
+    white-space: normal;
+  }
+  #emailSimulatorApp > h1 {
+    float:left;
+  }
+  #emailSimulatorApp > ul.admin {
+    list-style: none;
+    float:right;
+  }
+  #emailSimulatorApp > ul.admin li {
+    display:inline-block;
+  }
+  #emailSimulatorApp > ul.admin li:after {
+    content:'|';
+    padding-right:0.5rem;
+    padding-left:0.5rem;
+  }
+  
+  #emailSimulatorApp > ul.admin li:last-child:after {
+    content:none;
+  }
